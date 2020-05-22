@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class FayHatlari extends StatelessWidget {
   @override
@@ -126,6 +127,47 @@ class FayHatlari extends StatelessWidget {
                         ),
                         Image(
                           image: AssetImage("images/fay3.jpg"),
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Text(
+                          "MTA Yerbilimleri Harita Görüntüleyici ",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                          textAlign: TextAlign.start,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                              "\t\t\tMaden Teknik ve Arama Genel Müdürlüğü tarafından sunulan haritalarda istenilen bilgiye"
+                              "göre çeşitli altlıklar üzerinde, faylar ve dirifaylar görüntülenerek fay hattı bilgisine ulaşılabilir."
+                              "Ayrıca bu sitede MTA Genel Müdürlüğü ile AFAD Başkanlığınca yapılan işbirliği sonucunda"
+                              "elde edilen deprem verileri de kullanıcılara sunulmaktadır.\n"),
+                        ),
+                        InkWell(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "http://yerbilimleri.mta.gov.tr/",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 15),
+                            ),
+                          ),
+                          onTap: () =>
+                              launch('http://yerbilimleri.mta.gov.tr/'),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Image(
+                            image: AssetImage("images/fay4.jpg"),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Image(
+                            image: AssetImage("images/fay5.jpg"),
+                          ),
                         ),
                       ],
                     ),

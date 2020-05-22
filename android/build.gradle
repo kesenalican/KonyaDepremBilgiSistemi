@@ -7,6 +7,16 @@ buildscript {
             url "https://maven.google.com"
         }
     }
+    buildscript {
+        ext {
+            buildToolsVersion = "27.0.3"
+            minSdkVersion = 17
+            compileSdkVersion = 27
+            targetSdkVersion = 27
+            supportLibVersion = "27.1.1"
+            compileSdkVersion   = 27
+            playServicesVersion = "17.0.0"
+        }}
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
@@ -32,9 +42,13 @@ buildscript {
 }
 
 allprojects {
+
     repositories {
         google()
         jcenter()
+}
+    configurations.all {
+        resolutionStrategy.force "com.google.android.gms:play-services-tasks:15.0.1"
     }
 }
 

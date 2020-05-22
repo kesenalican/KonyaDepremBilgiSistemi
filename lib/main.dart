@@ -10,7 +10,6 @@ import 'deprem_dergi.dart';
 import 'deprem_oncesi.dart';
 import 'deprem_sonu.dart';
 
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -41,8 +40,14 @@ class Anasayfa extends StatelessWidget {
         child: Column(
           children: <Widget>[
             UserAccountsDrawerHeader(
-              accountName: Text("KON-Debis"),
-              accountEmail: Text("Konya Deprem Bilgi Sistemi"),
+              accountName: Text("KON-Debis",style: TextStyle(color: Colors.white),),
+              accountEmail: Text("Konya Deprem Bilgi Sistemi",style: TextStyle(color: Colors.white),),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: NetworkImage("https://img.gazetevatan.com/vatanmediafile/Haber598x362/2019/11/05/turkiye-de-deprem-cesitleri-nelerdir-artcilar-buy-4279676.Jpeg")
+                ),
+              ),
             ),
             Expanded(
               child: ListView(
@@ -97,11 +102,12 @@ class Anasayfa extends StatelessWidget {
                       trailing: Icon(Icons.arrow_forward_ios),
                     ),
                   ),
-
                   InkWell(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => DepremSonu()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => DepremSonu()));
                     },
                     child: ListTile(
                       leading: Icon(Icons.forward),
@@ -135,7 +141,6 @@ class Anasayfa extends StatelessWidget {
                       trailing: Icon(Icons.arrow_forward_ios),
                     ),
                   ),
-
                   InkWell(
                     onTap: () {
                       Navigator.push(

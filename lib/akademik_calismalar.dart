@@ -50,8 +50,8 @@ class AkademikCalismalar extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         "[PDF] researchgate.net",
-                        style:
-                            TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 15),
                       ),
                     ),
                     onTap: () => launch('[PDF] researchgate.net'),
@@ -91,8 +91,8 @@ class AkademikCalismalar extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         "http://www.tdmd.org.tr/TR/Genel/4UDMSK/pdf2017/3843.pdf",
-                        style:
-                            TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 15),
                       ),
                     ),
                     onTap: () => launch(
@@ -134,8 +134,8 @@ class AkademikCalismalar extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         "http://www.ishad.info/PastConferences/ISHAD2018/ISHAD2018/papers/A1.2-ISHAD2018ID118.pdf",
-                        style:
-                            TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 15),
                       ),
                     ),
                     onTap: () => launch(
@@ -175,8 +175,8 @@ class AkademikCalismalar extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         "http://www.ishad.info/PastConferences/ISHAD2018/ISHAD2018/Allpapers/A1.2-ISHAD2018ID115.htm",
-                        style:
-                            TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 15),
                       ),
                     ),
                     onTap: () => launch(
@@ -217,8 +217,8 @@ class AkademikCalismalar extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         "http://www.tdmd.org.tr/TR/Genel/4UDMSK/pdf2017/3879.pdf",
-                        style:
-                            TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 15),
                       ),
                     ),
                     onTap: () => launch(
