@@ -140,9 +140,9 @@ class FayHatlari extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text(
-                              "\t\t\tMaden Teknik ve Arama Genel Müdürlüğü tarafından sunulan haritalarda istenilen bilgiye"
-                              "göre çeşitli altlıklar üzerinde, faylar ve dirifaylar görüntülenerek fay hattı bilgisine ulaşılabilir."
-                              "Ayrıca bu sitede MTA Genel Müdürlüğü ile AFAD Başkanlığınca yapılan işbirliği sonucunda"
+                              "\t\t\tMaden Teknik ve Arama Genel Müdürlüğü tarafından sunulan haritalarda istenilen bilgiye "
+                              "göre çeşitli altlıklar üzerinde, faylar ve dirifaylar görüntülenerek fay hattı bilgisine ulaşılabilir. "
+                              "Ayrıca bu sitede MTA Genel Müdürlüğü ile AFAD Başkanlığınca yapılan işbirliği sonucunda "
                               "elde edilen deprem verileri de kullanıcılara sunulmaktadır.\n"),
                         ),
                         InkWell(
